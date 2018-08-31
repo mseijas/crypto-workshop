@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		305073A2487F0E59FDAD6070 /* Pods_CryptoWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4CC9F280A17A627A7C83AB /* Pods_CryptoWorkshop.framework */; };
+		600D46B12139BA8B00F5C677 /* ERC721.json in Resources */ = {isa = PBXBuildFile; fileRef = 600D46B02139BA8B00F5C677 /* ERC721.json */; };
 		60CFDC4F21398CD600C4134D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CFDC4E21398CD600C4134D /* AppDelegate.swift */; };
 		60CFDC5121398CD600C4134D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CFDC5021398CD600C4134D /* ViewController.swift */; };
 		60CFDC5421398CD600C4134D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5221398CD600C4134D /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0D4CC9F280A17A627A7C83AB /* Pods_CryptoWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600D46B02139BA8B00F5C677 /* ERC721.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ERC721.json; sourceTree = "<group>"; };
 		60CFDC4B21398CD600C4134D /* CryptoWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CFDC4E21398CD600C4134D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60CFDC5021398CD600C4134D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				60CFDC5A21398CD800C4134D /* Info.plist */,
 				60CFDC692139977100C4134D /* ImageURLView.swift */,
 				60CFDC5521398CD700C4134D /* Assets.xcassets */,
+				600D46B02139BA8B00F5C677 /* ERC721.json */,
 			);
 			path = CryptoWorkshop;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				60CFDC5921398CD700C4134D /* LaunchScreen.storyboard in Resources */,
 				60CFDC5621398CD700C4134D /* Assets.xcassets in Resources */,
 				60CFDC5421398CD600C4134D /* Main.storyboard in Resources */,
+				600D46B12139BA8B00F5C677 /* ERC721.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
