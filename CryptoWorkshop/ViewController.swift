@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for _ in 0...5 {
+            let imageView = ImageURLView(imageUrl: URL(string: "https://www.tryswift.co/assets/images/logo_riko_labs.png")!)
+            stackView.addArrangedSubview(imageView)
+        }
     }
 
-
 }
-
