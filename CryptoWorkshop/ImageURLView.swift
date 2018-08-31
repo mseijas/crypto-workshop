@@ -76,6 +76,8 @@ class ImageURLView: UIView {
         setError(message: "")
         
         let session = URLSession.shared
+        let imageUrl = self.imageUrl.pathExtension == "svg" ? ZippySVG(imageUrl: self.imageUrl) : self.imageUrl
+        
         task = session.dataTask(with: imageUrl, completionHandler: { [weak self] (data, response, error) in
             guard let `self` = self else { return }
             
@@ -133,4 +135,13 @@ class ImageURLView: UIView {
         }
     }
     
+}
+
+// MARK: - ZippySVG
+
+fileprivate func ZippySVG(imageUrl: URL) -> URL {
+    let baseURL = URL(string: "https://zippy-svg.herokuapp.com/svg")!
+    var zippyURL = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)!
+    zippyURL.queryItems = [URLQueryItem(name: "url", value: imageUrl.absoluteString)]
+    return zippyURL.url!
 }

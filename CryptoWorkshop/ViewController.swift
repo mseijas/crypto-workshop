@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         for _ in 0...5 {
-            let imageView = ImageURLView(imageUrl: URL(string: "https://www.tryswift.co/assets/images/logo_riko_labs.png")!)
+            let imageView = ImageURLView(imageUrl: URL(string: "https://storage.googleapis.com/opensea-prod.appspot.com/0x06012c8cf97bead5deae237070f9587f8e7a266d/899656.svg")!)
             stackView.addArrangedSubview(imageView)
         }
     }
