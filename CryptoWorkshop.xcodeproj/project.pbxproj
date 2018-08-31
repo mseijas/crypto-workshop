@@ -12,7 +12,23 @@
 		60CFDC5421398CD600C4134D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5221398CD600C4134D /* Main.storyboard */; };
 		60CFDC5621398CD700C4134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5521398CD700C4134D /* Assets.xcassets */; };
 		60CFDC5921398CD700C4134D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5721398CD700C4134D /* LaunchScreen.storyboard */; };
+		60CFDC642139937900C4134D /* web3swift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CFDC602139935A00C4134D /* web3swift_iOS.framework */; };
+		60CFDC652139937900C4134D /* web3swift_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CFDC602139935A00C4134D /* web3swift_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60CFDC662139937900C4134D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60CFDC652139937900C4134D /* web3swift_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		60CFDC4B21398CD600C4134D /* CryptoWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		60CFDC5521398CD700C4134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60CFDC5821398CD700C4134D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60CFDC5A21398CD800C4134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CFDC602139935A00C4134D /* web3swift_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = web3swift_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CFDC642139937900C4134D /* web3swift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				60CFDC4D21398CD600C4134D /* CryptoWorkshop */,
 				60CFDC4C21398CD600C4134D /* Products */,
+				60CFDC602139935A00C4134D /* web3swift_iOS.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +93,7 @@
 				60CFDC4721398CD600C4134D /* Sources */,
 				60CFDC4821398CD600C4134D /* Frameworks */,
 				60CFDC4921398CD600C4134D /* Resources */,
+				60CFDC662139937900C4134D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +302,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SHR79YU44T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CryptoWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SHR79YU44T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CryptoWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

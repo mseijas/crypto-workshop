@@ -1,0 +1,4 @@
+framework module web3swift_iOS {
+    header "web3swift_iOS-Swift.h"
+    requires objc
+}
