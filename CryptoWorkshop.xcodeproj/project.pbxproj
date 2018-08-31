@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305073A2487F0E59FDAD6070 /* Pods_CryptoWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4CC9F280A17A627A7C83AB /* Pods_CryptoWorkshop.framework */; };
 		60CFDC4F21398CD600C4134D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CFDC4E21398CD600C4134D /* AppDelegate.swift */; };
 		60CFDC5121398CD600C4134D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CFDC5021398CD600C4134D /* ViewController.swift */; };
 		60CFDC5421398CD600C4134D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5221398CD600C4134D /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D4CC9F280A17A627A7C83AB /* Pods_CryptoWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CFDC4B21398CD600C4134D /* CryptoWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CFDC4E21398CD600C4134D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60CFDC5021398CD600C4134D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		60CFDC5821398CD700C4134D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60CFDC5A21398CD800C4134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60CFDC692139977100C4134D /* ImageURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLView.swift; sourceTree = "<group>"; };
+		795E87B760C4323209895F8B /* Pods-CryptoWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWorkshop/Pods-CryptoWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
+		EC91790C6A319CBF4DA1D424 /* Pods-CryptoWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWorkshop/Pods-CryptoWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305073A2487F0E59FDAD6070 /* Pods_CryptoWorkshop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2057628001E9BF86C49AC399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				795E87B760C4323209895F8B /* Pods-CryptoWorkshop.debug.xcconfig */,
+				EC91790C6A319CBF4DA1D424 /* Pods-CryptoWorkshop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50C8605E8BE362D645D9D915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D4CC9F280A17A627A7C83AB /* Pods_CryptoWorkshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60CFDC4221398CD600C4134D = {
 			isa = PBXGroup;
 			children = (
 				60CFDC4D21398CD600C4134D /* CryptoWorkshop */,
 				60CFDC4C21398CD600C4134D /* Products */,
+				2057628001E9BF86C49AC399 /* Pods */,
+				50C8605E8BE362D645D9D915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,10 +96,10 @@
 				60CFDC4E21398CD600C4134D /* AppDelegate.swift */,
 				60CFDC5021398CD600C4134D /* ViewController.swift */,
 				60CFDC5221398CD600C4134D /* Main.storyboard */,
-				60CFDC5521398CD700C4134D /* Assets.xcassets */,
 				60CFDC5721398CD700C4134D /* LaunchScreen.storyboard */,
 				60CFDC5A21398CD800C4134D /* Info.plist */,
 				60CFDC692139977100C4134D /* ImageURLView.swift */,
+				60CFDC5521398CD700C4134D /* Assets.xcassets */,
 			);
 			path = CryptoWorkshop;
 			sourceTree = "<group>";
@@ -87,10 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60CFDC5D21398CD800C4134D /* Build configuration list for PBXNativeTarget "CryptoWorkshop" */;
 			buildPhases = (
+				CB21EC5FFC37C9C25E98A0A3 /* [CP] Check Pods Manifest.lock */,
 				60CFDC4721398CD600C4134D /* Sources */,
 				60CFDC4821398CD600C4134D /* Frameworks */,
 				60CFDC4921398CD600C4134D /* Resources */,
 				60CFDC662139937900C4134D /* Embed Frameworks */,
+				D96636B7ABAB59C5943010BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +172,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB21EC5FFC37C9C25E98A0A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoWorkshop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96636B7ABAB59C5943010BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoWorkshop/Pods-CryptoWorkshop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoWorkshop/Pods-CryptoWorkshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60CFDC4721398CD600C4134D /* Sources */ = {
@@ -296,6 +379,7 @@
 		};
 		60CFDC5E21398CD800C4134D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795E87B760C4323209895F8B /* Pods-CryptoWorkshop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +402,7 @@
 		};
 		60CFDC5F21398CD800C4134D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC91790C6A319CBF4DA1D424 /* Pods-CryptoWorkshop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
