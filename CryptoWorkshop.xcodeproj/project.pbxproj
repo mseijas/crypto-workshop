@@ -12,8 +12,6 @@
 		60CFDC5421398CD600C4134D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5221398CD600C4134D /* Main.storyboard */; };
 		60CFDC5621398CD700C4134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5521398CD700C4134D /* Assets.xcassets */; };
 		60CFDC5921398CD700C4134D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CFDC5721398CD700C4134D /* LaunchScreen.storyboard */; };
-		60CFDC642139937900C4134D /* web3swift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CFDC602139935A00C4134D /* web3swift_iOS.framework */; };
-		60CFDC652139937900C4134D /* web3swift_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CFDC602139935A00C4134D /* web3swift_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60CFDC6A2139977100C4134D /* ImageURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CFDC692139977100C4134D /* ImageURLView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				60CFDC652139937900C4134D /* web3swift_iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +36,6 @@
 		60CFDC5521398CD700C4134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60CFDC5821398CD700C4134D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60CFDC5A21398CD800C4134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60CFDC602139935A00C4134D /* web3swift_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = web3swift_iOS.framework; sourceTree = "<group>"; };
 		60CFDC692139977100C4134D /* ImageURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60CFDC642139937900C4134D /* web3swift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +55,6 @@
 			children = (
 				60CFDC4D21398CD600C4134D /* CryptoWorkshop */,
 				60CFDC4C21398CD600C4134D /* Products */,
-				60CFDC602139935A00C4134D /* web3swift_iOS.framework */,
 			);
 			sourceTree = "<group>";
 		};
