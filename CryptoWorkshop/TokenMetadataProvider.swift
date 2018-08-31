@@ -29,9 +29,13 @@ class TokenMetadaProvider {
             }
             
             let decoder = JSONDecoder()
-            if let data = data,
-                let response = try? decoder.decode(TokenMetada.self, from: data) {
-                tokenMetadata = response
+            if let data = data {
+                do {
+                    let response = try decoder.decode(TokenMetada.self, from: data)
+                    tokenMetadata = response
+                } catch {
+                    print("Error: \(error.localizedDescription)")
+                }
             } else {
                 print("Error: JSON parsing error")
                 tokenMetadata = nil
